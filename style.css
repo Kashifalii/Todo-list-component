@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    height: 100vh;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+header .container {
+    width: 400px;
+    height: fit-content;
+    padding: 40px;
+    background: whitesmoke;
+}
+
+header .container .inp-grp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+header .container .inp-grp input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 0;
+}
+
+header .container .inp-grp input:focus {
+    outline: none;
+}
+
+header .container .inp-grp button {
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 0;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+header .container .inp-grp button:hover {
+    background: rgb(221, 221, 221);
+}
+
+header .container .list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+header .container .list li {
+    padding: 10px;
+    background: rgb(208, 208, 208);
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .list li span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .container .list li span i {
+    transition: all ease .2s;
+}
+
+header .container .list li span .fa-trash:hover {
+    color: red;
+}
